@@ -1,0 +1,58 @@
+section {
+    margin: 0 auto;
+    width: 700px;
+}
+
+h2 {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.container-encode, .container-decode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea {
+    width: 200px;
+    height: 100px;
+    resize: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+#textKey {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    user-select: none;
+    transition: all .7s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+hr {
+    width: 700px;
+    margin: 20px auto;
+    border: 1px solid #000;
+}

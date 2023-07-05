@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Шифрование</title>
+</head>
+<body>
+    <section>
+        <h2>Метод Виженера</h2>
+
+        <div class="container-encode">
+            <textarea id="textInputEncode" placeholder="Введите шифруемое слово"></textarea>
+            
+            <input id="vEncodeBtn" class="btn" type="submit" value="Зашифровать">
+            
+            <textarea id="textOutputEncode" disabled></textarea>
+        </div>
+
+        <input id="textKey" type="text" placeholder="Ключевео слово">
+
+        <div class="container-decode">
+            <textarea id="textInputDecode" placeholder="Введите зашифрованное слово"></textarea>
+            
+            <input id="vDecodeBtn" class="btn" type="submit" value="Расшифровать">
+            
+            <textarea id="textOutputDecode" disabled></textarea>
+        </div>
+    </section>
+
+    <hr>
+
+    <script type="module" src="./JS/index.js"></script>
+</body>
+</html>
