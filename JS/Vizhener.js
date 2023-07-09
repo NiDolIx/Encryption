@@ -11,8 +11,8 @@ export default class Vizhener {
     #col = this.#alfavit.length;
 
     constructor(key, text) {
-        this.#key = Array.from(key.toLowerCase());
-        this.#text = Array.from(text.toLowerCase());
+        this.#key = Array.from(key.trim().toLowerCase());
+        this.#text = Array.from(text.trim().toLowerCase());
     }
 
     // Шифрование методом Виженера
