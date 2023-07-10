@@ -9,7 +9,7 @@ export default class RSA {
     #massage;
 
     constructor(massage) {
-        this.#massage = massage;
+        this.#massage = massage.trim().toLowerCase();
     }
 
     // Метод шифрования
@@ -21,9 +21,11 @@ export default class RSA {
         let big = null;
 
         let n = BigInt(p * q);
+
         let m = (p - 1) * (q - 1);
 
         let d = this.#calculateD(m);
+
         let e = this.#calculateE(d, m);
         
         for (let i = 0; i < this.#massage.length; i++) {
@@ -87,6 +89,7 @@ export default class RSA {
         for(let i = 2; i <= m; i++) {
             if((m % i == 0) && (d % i == 0)) {
                 d--;
+
                 i = 1;
             }
         }

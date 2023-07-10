@@ -13,25 +13,61 @@
         <h2>Метод Виженера</h2>
 
         <div class="container-encode">
-            <textarea id="textInputEncode" placeholder="Введите шифруемое слово"></textarea>
+            <textarea id="textInputEncodeV" placeholder="Введите шифруемое слово"></textarea>
             
             <input id="vEncodeBtn" class="btn" type="submit" value="Зашифровать">
             
-            <textarea id="textOutputEncode" disabled></textarea>
+            <textarea id="textOutputEncodeV" disabled></textarea>
         </div>
 
         <input id="textKey" type="text" placeholder="Ключевео слово">
 
         <div class="container-decode">
-            <textarea id="textInputDecode" placeholder="Введите зашифрованное слово"></textarea>
+            <textarea id="textInputDecodeV" placeholder="Введите зашифрованное слово"></textarea>
             
             <input id="vDecodeBtn" class="btn" type="submit" value="Расшифровать">
             
-            <textarea id="textOutputDecode" disabled></textarea>
+            <textarea id="textOutputDecodeV" disabled></textarea>
         </div>
     </section>
 
     <hr>
+
+    <section>
+        <h2>Метод RSA</h2>
+
+        <div class="container-encode">
+            <div class="valueEncription">
+                <p>Введите ПРОСТЫЕ числа:</p>
+
+                <p>p = <input id="p" type="text"></p>
+
+                <p>q = <input id="q" type="text"></p>
+
+                <input id="RSAEncodeBtn" class="btn" type="submit" value="Зашифровать">
+            </div>
+
+            <textarea id="textInputEncodeRSA" placeholder="Введите шифруемое слово"></textarea>
+
+            <textarea id="textOutputEncodeRSA" disabled></textarea>
+        </div>
+
+        <div class="container-decode">
+            <div class="valueEncription">
+                <p>Введите СЕКРЕТНЫЙ ключ:</p>
+
+                <p>d = <input id="d" type="text"></p>
+
+                <p>n = <input id="n" type="text"></p>
+
+                <input id="RSADecodeBtn" class="btn" type="submit" value="Расшифровать">
+            </div>
+
+            <textarea id="textInputDecodeRSA" placeholder="Введите зашифрованное слово"></textarea>
+
+            <textarea id="textOutputDecodeRSA" disabled></textarea>
+        </div>
+    </section>
 
     <script type="module" src="./JS/index.js"></script>
 </body>
