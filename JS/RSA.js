@@ -61,7 +61,7 @@ export default class RSA {
             let index = Number(big);
     
             result += this.#alfavit[index];
-        })
+        });
     
         return result;
     }

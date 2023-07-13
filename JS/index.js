@@ -1,5 +1,6 @@
 import Vizhener from "./Vizhener.js";
 import RSA from "./RSA.js";
+import { checkV } from "./check.js";
 
 // Обработка кнопки "Зашифровать" метода Виженера
 document.getElementById('vEncodeBtn').addEventListener('click', function() {
@@ -54,24 +55,3 @@ document.getElementById('RSADecodeBtn').addEventListener('click', function() {
 
     document.getElementById('textOutputDecodeRSA').value = result.decodeRSA(d, n);
 });
-
-// Функция проверки на пустоту данных для метода Виженера
-function checkV(key, text) {
-    if(!key.value.trim()) {
-        key.style.borderColor = "red";
-
-        return false;
-    }
-
-    else if(!text.value.trim()) {
-        text.style.borderColor = "red";
-
-        return false;
-    }
-
-    else {
-        key.style.borderColor = "#000";
-        text.style.borderColor = "#000";
-        return true;
-    }
-}
